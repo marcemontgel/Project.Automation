@@ -19,6 +19,7 @@ namespace Automator.Project.Important.Pages
         {
             QuickSearch = new(Driver, Action, Wait);
             Availability = new(Driver, Action, Wait);
+            DriverInformation = new(Driver, Action, Wait);
             Booking = new(Driver, Action, Wait);
         }
         #endregion
@@ -34,13 +35,15 @@ namespace Automator.Project.Important.Pages
         /// Availability Component
         /// </summary>
         public AvailabilityComponent Availability { get; private set; }
-        #endregion
+        
 
         /// <summary>
         /// Booking Component
         /// </summary>
-        public DriverComponent Booking { get; private set; }
-        
+        public DriverComponent DriverInformation { get; private set; }
+
+        public BookComponent Booking { get; private set; }
+        #endregion
 
         #region NavigateToUrl
         /// <summary>

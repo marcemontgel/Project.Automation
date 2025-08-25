@@ -16,3 +16,7 @@ Scenario: Navigate
 	When Add Telephone 3128596410
 	When Add Email pruebanet@gmail.com
 	When Click Button Reserve Now
+	When Write Credit Card 4111111111111111
+	When Write Date Expiration MMYY 1230
+	When Write CVV 123
+	When Click Button Pay Now

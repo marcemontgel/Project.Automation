@@ -135,6 +135,18 @@ this.ScenarioInitialize(scenarioInfo);
 #line 18
  testRunner.When("Click Button Reserve Now", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
+#line 19
+ testRunner.When("Write Credit Card 4111111111111111", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 20
+ testRunner.When("Write Date Expiration MMYY 1230", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 21
+ testRunner.When("Write CVV 123", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 22
+ testRunner.When("Click Button Pay Now", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

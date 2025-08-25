@@ -4,18 +4,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace Automator.Project.Important.StepDefinitions
 {
+
     [Binding]
-    public class DriverStepDefinition
+    public class BookStepDefinition
     {
         #region Constructor
         /// <summary>
         /// Initializes a new instance of scenario context <see cref="ScenarioContext"/> class.
         /// </summary>
-        public DriverStepDefinition(ScenarioContext scenarioContext)
+        public BookStepDefinition(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
         }
@@ -33,44 +33,45 @@ namespace Automator.Project.Important.StepDefinitions
         readonly ScenarioContext _scenarioContext;
         #endregion
 
-        #region SetFullNameToReservation
+        #region SetLocationPickUp
         /// <summary>
-        /// Add Name
+        /// SetCreditCard
         /// </summary>
         /// <param name="lang">Language</param>
-        [When(@"Add Name (.*)")]
-        public void SetFullNameToReservation(string name)
-            => _homePage.DriverInformation.SetFullNameToReservation(name);
+        [When(@"Write Credit Card (.*)")]
+        public void SetCreditCard(string creditCard)
+            => _homePage.Booking.SetCreditCard(creditCard);
         #endregion
 
-        #region SetPhoneToReservation
+        #region SetLocationPickUp
         /// <summary>
-        /// Add Telephone
+        /// SetCreditCard
         /// </summary>
         /// <param name="lang">Language</param>
-        [When(@"Add Telephone (.*)")]
-        public void SetPhoneToReservation(string phone)
-            => _homePage.DriverInformation.SetPhoneToReservation(phone);
+        [When(@"Write Date Expiration MMYY (.*)")]
+        public void SetDateExpiration(string dateExp)
+            => _homePage.Booking.SetDateExpiration(dateExp);
         #endregion
 
-        #region SetEmailToReservation
+        #region SetLocationPickUp
         /// <summary>
-        /// Add Telephone
+        /// SetCreditCard
         /// </summary>
         /// <param name="lang">Language</param>
-        [When(@"Add Email (.*)")]
-        public void SetEmailToReservation(string email)
-            => _homePage.DriverInformation.SetEmailToReservation(email);
+        [When(@"Write CVV (.*)")]
+        public void SetCodeVerification(string cvv)
+            => _homePage.Booking.SetCodeVerification(cvv);
         #endregion
 
-        #region PressButtonReserverNow
+
+        #region ClickButtonPayNow
         /// <summary>
-        /// Add Telephone
+        /// SetCreditCard
         /// </summary>
         /// <param name="lang">Language</param>
-        [When(@"Click Button Reserve Now")]
-        public void PressButtonReserverNow()
-            => _homePage.DriverInformation.PressButtonReserverNow();
+        [When(@"Click Button Pay Now")]
+        public void ClickButtonPayNow()
+            => _homePage.Booking.ClickButtonPayNow();
         #endregion
     }
 }

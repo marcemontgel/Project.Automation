@@ -27,9 +27,9 @@ namespace Automator.Project.Important.Components
 
         public void SetFullNameToReservation(string name)
         => WaitAndSetText(_bookinPage.InputNameCostumer, name);
-        
+
         public void SetPhoneToReservation(string phone)
-        => WaitAndSetText(_bookinPage.InputTelephoneCostumer, phone);
+        => WaitAndSetText(_bookinPage.InputTelephoneCostumer, phone);         
         
         public void SetEmailToReservation(string email)
         => WaitAndSetText(_bookinPage.InputEmailCostumer, email);
