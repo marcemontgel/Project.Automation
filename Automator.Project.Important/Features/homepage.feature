@@ -12,3 +12,7 @@ Scenario: Navigate
 	When Asign Hour Return 8:30 AM
 	When Click Button SearchCar
 	When Select Vehicle
+	When Add Name Prueba Net
+	When Add Telephone 3128596410
+	When Add Email pruebanet@gmail.com
+	When Click Button Reserve Now
