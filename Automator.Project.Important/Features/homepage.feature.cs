@@ -105,6 +105,24 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.Given("Navigate to the website home page https://holacarrentals.com/", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+#line 9
+ testRunner.When("Select Pick-Up Date 50", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 10
+ testRunner.When("Select Drop-off Date 56", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 11
+ testRunner.When("Select Hour PickUp 3:00 PM", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 12
+ testRunner.When("Asign Hour Return 8:30 AM", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 13
+ testRunner.When("Click Button SearchCar", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 14
+ testRunner.When("Select Vehicle", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
             }
             this.ScenarioCleanup();
         }

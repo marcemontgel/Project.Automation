@@ -1,4 +1,6 @@
 ﻿using Automator.Project.Important.Common.Page;
+using Automator.Project.Important.Components;
+using Automator.Project.Important.StepDefinitions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,13 +17,22 @@ namespace Automator.Project.Important.Pages
         /// </summary>
         public HomePage()
         {
-
+            QuickSearch = new(Driver, Action, Wait);
+            Availability = new(Driver, Action, Wait);
         }
         #endregion
 
         #region Properties
 
+        /// <summary>
+        /// Quick Search Component
+        /// </summary>
+        public QuickSearchComponent QuickSearch { get; private set; }
 
+        /// <summary>
+        /// Availability Component
+        /// </summary>
+        public AvailabilityComponent Availability { get; private set; }
         #endregion
 
         #region NavigateToUrl

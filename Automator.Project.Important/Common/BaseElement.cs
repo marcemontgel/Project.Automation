@@ -336,7 +336,7 @@ namespace Automator.Project.Important.Common
             string eyear = laterDay.Split("-")[2];
             string edate = laterDay.Split("-")[0];
 
-            Driver.FindElement(By.XPath("(//input[@data-datepicker='datepicker-inline'])[1]")).Click();
+            Driver.FindElement(By.XPath("//*[@class='datetime-input']")).Click();
             string cmonth = Driver.FindElement(By.XPath("(//*[@class='month-item-name'])[1]")).Text.Trim();
             string cyear = Driver.FindElement(By.XPath("(//span[@class='month-item-year'])[1]")).Text.Trim();
             IWebElement next;

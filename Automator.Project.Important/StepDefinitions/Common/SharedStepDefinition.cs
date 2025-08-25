@@ -11,14 +11,14 @@ namespace Automator.Project.Important.StepDefinitions.Common
     /// The shared step definitions.
     /// </summary>
     [Binding]
-    public class SharedStepsStepDefinitions
+    public class SharedStepDefinition
     {
         #region Constructor
         /// <summary>
-        /// Initializes a new instance of scenario context <see cref="SharedStepsStepDefinitions"/> class.
+        /// Initializes a new instance of scenario context <see cref="SharedStepDefinition"/> class.
         /// </summary>
         /// <param name="scenarioContext">The scenario context.</param>
-        public SharedStepsStepDefinitions(ScenarioContext scenarioContext)
+        public SharedStepDefinition(ScenarioContext scenarioContext)
         {
             _scenarioContext = scenarioContext;
         }
