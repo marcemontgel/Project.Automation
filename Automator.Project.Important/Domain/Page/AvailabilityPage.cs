@@ -4,7 +4,10 @@ namespace Automator.Project.Important.Domain.Page
 {
     public class AvailabilityPage
     {
-        public By ButtonSelectionCar
+        /// <summary>
+        /// Button Select Car
+        /// </summary>
+        public By ButtonSelectCar
             => By.XPath("(//*[@id='availability-to-details'])[1]");
     }
 }

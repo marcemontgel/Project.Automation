@@ -35,13 +35,16 @@ namespace Automator.Project.Important.Pages
         /// Availability Component
         /// </summary>
         public AvailabilityComponent Availability { get; private set; }
-        
+
+
+        /// <summary>
+        /// Driver Information Component
+        /// </summary>
+        public DriverComponent DriverInformation { get; private set; }
 
         /// <summary>
         /// Booking Component
         /// </summary>
-        public DriverComponent DriverInformation { get; private set; }
-
         public BookComponent Booking { get; private set; }
         #endregion
 

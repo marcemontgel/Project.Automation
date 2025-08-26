@@ -32,7 +32,6 @@ namespace Automator.Project.Important.Components
         private readonly QuickSeachPage _quickSeachPage;
         #endregion
 
-
         #region GetElementsListHours
         /// <summary>
         /// <c>GetElementsListTypePrice</c> Get Elements List Type Price - Element value
@@ -100,7 +99,7 @@ namespace Automator.Project.Important.Components
             => SelectEndDate(dayEnd);
         #endregion
 
-        #region
+        #region AsignHourPickUp
         /// <summary>
         /// Asign Hour PickUp
         /// </summary>
@@ -111,7 +110,7 @@ namespace Automator.Project.Important.Components
             GetElementsListHours(hourPickUp, _quickSeachPage.ComboBoxListHours);        }
         #endregion
 
-        #region
+        #region AsignHourReturn
         /// <summary>
         /// Asign Hour Return
         /// </summary>

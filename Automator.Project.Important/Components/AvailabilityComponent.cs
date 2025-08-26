@@ -29,7 +29,12 @@ namespace Automator.Project.Important.Components
         private readonly AvailabilityPage _availabilityPage;
         #endregion
 
+        #region SelectVehicle
+        /// <summary>
+        /// Select Vehicle
+        /// </summary>
         public void SelectVehicle()
-        => WaitAndClickElement(_availabilityPage.ButtonSelectionCar);        
+        => WaitAndClickElement(_availabilityPage.ButtonSelectCar);
+        #endregion
     }
 }

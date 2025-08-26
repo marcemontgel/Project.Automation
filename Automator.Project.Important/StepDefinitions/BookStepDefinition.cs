@@ -63,7 +63,6 @@ namespace Automator.Project.Important.StepDefinitions
             => _homePage.Booking.SetCodeVerification(cvv);
         #endregion
 
-
         #region ClickButtonPayNow
         /// <summary>
         /// SetCreditCard

@@ -35,7 +35,7 @@
   <ul class="nav-right">
    <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
    <li class="m-r-10">
-    <a href="#"><span class="badge badge-primary">25/08/2025 5:52:06 p. m.</span></a>
+    <a href="#"><span class="badge badge-primary">25/08/2025 7:09:55 p. m.</span></a>
    </li>
   </ul>
  </div>
@@ -71,7 +71,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
           <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
- <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>             <div class="dropdown-divider"></div>
+ <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>             <div class="dropdown-divider"></div>
             <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
           </ul>
         </li>
@@ -79,25 +79,25 @@
     </div>
     <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item" status="pass" test-id="1"
+        <li class="test-item" status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">homepage</p>
             <p class="text-sm">
-              <span>5:52:06 p. m.</span> / <span>54664,81 ms</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:09:55 p. m.</span> / <span>77082,24 ms</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
             <div class="detail-head">
               <div class="p-v-10">
                 <div class="info">
-                  <h5 class="test-status text-pass">homepage</h5>
-                  <span class='badge badge-success'>25/08/2025 5:52:06 p. m.</span>
-                  <span class='badge badge-danger'>25/08/2025 5:53:01 p. m.</span>
-                  <span class='badge badge-default'>54664,81 ms</span>
+                  <h5 class="test-status text-fail">homepage</h5>
+                  <span class='badge badge-success'>25/08/2025 7:09:55 p. m.</span>
+                  <span class='badge badge-danger'>25/08/2025 7:11:12 p. m.</span>
+                  <span class='badge badge-default'>77082,24 ms</span>
                   &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
                   <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
                   <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -111,10 +111,10 @@
       <div class="card">
         <div class="card-header" role="tab">
           <div class="card-title">
-            <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Scenario: Navigate</div>
+            <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Scenario: Navigate</div>
           </div>
         </div>
-            <div class="collapse">
+            <div class="">
               <div class="card-body">
                 
 
@@ -181,74 +181,24 @@
                     
 
                   </div>
-                  <div class="step pass-bg" title="">
-                    <span>When Add Name Prueba Net</span>
+                  <div class="step fail-bg" title="">
+                    <span>When TIMED OUT AFTER 60 SECONDS</span>
                     
     <div>
-    </div>
 
-                    
-
-                  </div>
-                  <div class="step pass-bg" title="">
-                    <span>When Add Telephone 3128596410</span>
-                    
+Add Name Prueba Net    </div>
     <div>
-    </div>
 
-                    
-
-                  </div>
-                  <div class="step pass-bg" title="">
-                    <span>When Add Email pruebanet@gmail.com</span>
-                    
-    <div>
-    </div>
-
-                    
-
-                  </div>
-                  <div class="step pass-bg" title="">
-                    <span>When Click Button Reserve Now</span>
-                    
-    <div>
-    </div>
-
-                    
-
-                  </div>
-                  <div class="step pass-bg" title="">
-                    <span>When Write Credit Card 4111111111111111</span>
-                    
-    <div>
-    </div>
-
-                    
-
-                  </div>
-                  <div class="step pass-bg" title="">
-                    <span>When Write Date Expiration MMYY 1230</span>
-                    
-    <div>
-    </div>
-
-                    
-
-                  </div>
-                  <div class="step pass-bg" title="">
-                    <span>When Write CVV 123</span>
-                    
-    <div>
-    </div>
-
-                    
-
-                  </div>
-                  <div class="step pass-bg" title="">
-                    <span>When Click Button Pay Now</span>
-                    
-    <div>
-    </div>
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)
+   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   at Automator.Project.Important.Common.BaseElement.WaitElement(By locator) in C:\Users\Fanny\source\repos\Automator.Project.Important\Automator.Project.Important\Common\BaseElement.cs:line 174
+   at Automator.Project.Important.Common.BaseElement.WaitAndSetText(By element, String text) in C:\Users\Fanny\source\repos\Automator.Project.Important\Automator.Project.Important\Common\BaseElement.cs:line 436
+   at Automator.Project.Important.Components.DriverComponent.SetFullNameToReservation(String name) in C:\Users\Fanny\source\repos\Automator.Project.Important\Automator.Project.Important\Components\DriverComponent.cs:line 38
+   at Automator.Project.Important.StepDefinitions.DriverStepDefinition.SetFullNameToReservation(String name) in C:\Users\Fanny\source\repos\Automator.Project.Important\Automator.Project.Important\StepDefinitions\DriverStepDefinition.cs:line 43
+   at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments, TimeSpan& duration)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)    </div>
 
                     
 
@@ -277,25 +227,25 @@
     <div class="col-md-3">
       <div class="card"><div class="card-body">
           <p class="m-b-0">Started</p>
-          <h3>25/08/2025 5:52:06 p. m.</h3>
+          <h3>25/08/2025 7:09:55 p. m.</h3>
       </div></div>
     </div>
     <div class="col-md-3">
       <div class="card"><div class="card-body">
           <p class="m-b-0">Ended</p>
-          <h3>25/08/2025 5:53:02 p. m.</h3>
+          <h3>25/08/2025 7:11:12 p. m.</h3>
       </div></div>
     </div>
     <div class="col-md-3">
       <div class="card"><div class="card-body">
           <p class="m-b-0 text-pass">Features Passed</p>
-          <h3>1</h3>
+          <h3>0</h3>
       </div></div>
     </div>
     <div class="col-md-3">
       <div class="card"><div class="card-body">
           <p class="m-b-0 text-fail">Features Failed</p>
-          <h3>0</h3>
+          <h3>1</h3>
       </div></div>
     </div>
   </div>
@@ -311,12 +261,12 @@
           </div>
         </div>
         <div class="card-footer">
-          <div><small data-tooltip='1%'>
-            <b>1</b> features passed
+          <div><small data-tooltip='0%'>
+            <b>0</b> features passed
             </small>
           </div>
           <div>
-            <small data-tooltip='0%'><b>0</b> features failed, 
+            <small data-tooltip='1%'><b>1</b> features failed, 
             <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
             </small>
           </div>
@@ -334,9 +284,9 @@
           </div>
         </div>
         <div class="card-footer">
-          <div><small data-tooltip='1%'><b>1</b> scenarios passed</small></div>
+          <div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
           <div>
-            <small data-tooltip='0%'><b>0</b> scenarios failed, 
+            <small data-tooltip='1%'><b>1</b> scenarios failed, 
             <b>0</b> skipped, <b data-tooltip='%'>0</b> others
             </small>
           </div>
@@ -354,9 +304,9 @@
           </div>
         </div>
         <div class="card-footer">
-          <div><small data-tooltip='1%'><b>15</b> Steps passed</small></div>
+          <div><small data-tooltip='0%'><b>7</b> Steps passed</small></div>
           <div>
-            <small data-tooltip='0%'><b>0</b> steps failed, 
+            <small data-tooltip='0%'><b>1</b> steps failed, 
             <b>0</b> skipped, <b data-tooltip='%'>0</b> others
             </small>
           </div>
@@ -372,7 +322,7 @@
     </div>
   </div></div>
   <script>
-	var timeline = { "homepage":54664,8101 };
+	var timeline = { "homepage":77082,2389 };
   </script>
   <div class="row">
   </div>
@@ -381,13 +331,13 @@
   var statusGroup = {
     parentCount: 1,
     childCount: 1,
-    grandChildCount: 15,
-    eventsCount: 15,
+    grandChildCount: 8,
+    eventsCount: 9,
 
-passParent:1,failParent:0,warningParent:0,skipParent:0,    
-passChild:1,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
-passGrandChild:15,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
-passEvents:15,failEvents:0,warningEvents:0,skipEvents:0,infoEvents:0,  };
+passParent:0,failParent:1,warningParent:0,skipParent:0,    
+passChild:0,failChild:1,warningChild:0,skipChild:0,infoChild:0,    
+passGrandChild:7,failGrandChild:1,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passEvents:7,failEvents:2,warningEvents:0,skipEvents:0,infoEvents:0,  };
 </script>
 
     </div>

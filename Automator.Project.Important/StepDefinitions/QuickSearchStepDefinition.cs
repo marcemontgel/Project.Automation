@@ -45,7 +45,6 @@ namespace Automator.Project.Important.StepDefinitions
             => _homePage.QuickSearch.SetLocationPickUp(location, nameLocation);
         #endregion
 
-        //
         #region ClickButtonSearchCar
         /// <summary>
         /// Change Language
